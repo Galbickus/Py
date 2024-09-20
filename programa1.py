@@ -1,0 +1,6 @@
+print("¡Hola Mundo!, Ahora en Pyton, Vamos por Big Data")
+print("Este mensaje se concatena con end ", end = "y esta es la parte que agrego")
+print("")
+print("Otro mensaje se concatena con end ", end = "")
+print("y esta es la parte que agrego en otra linea")
+print("y esta es la parte que agrego en otra linea")
