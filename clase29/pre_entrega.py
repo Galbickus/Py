@@ -16,8 +16,35 @@ while True:
     try:
         #PROCESO: SOLICITUD DE OPCIÓN.
         opcion = int(input("Seleccione una opcion entre 1 y 7: "))
+        
+        
         if opcion == 1:
             print("Usted ha seleccionado la opción N°1: Registro")
+            while True:
+                nombre = str(input("Nombre del producto: ").upper)
+                
+                #PETICION DEL PRECIO DEL PRODUCTO
+                while True:
+                    try:
+                        precio= float(input("Precio del Producto: "))
+                        if precio <=0:
+                            print("Por favor ingrese el valor (mayor a 0)")
+                        else:
+                            break
+                    except ValueError:
+                        print("Ingrese un valor numérico.")
+                
+                #PETICION DEL STOCK DEL PRODUCTO
+                while True:
+                    try:
+                        stock = float(input("Cantidad del producto")) 
+                        if stock <= 0:
+                            print("El stock debe ser mayor a cero")
+                    except ValueError:
+                        print("El stock debe ser un número")           
+            
+            
+            
         elif opcion ==2:
             print("Usted ha seleccionado la opción N°2: ")
         elif opcion ==3:
