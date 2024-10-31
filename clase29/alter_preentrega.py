@@ -11,9 +11,12 @@ while True:
 
     if opcion == "1":
         print("Usted ha seleccionado la opción N°1: Registro")
-        while True:
+        while True: 
+            # Validación del nombre del producto
             nombre = input("Nombre del producto: ").strip().upper() # strip sirve para que no tome los espacios
-            
+            if not nombre:
+                print("El nombre no puede estar vacío. Intente nuevamente.")
+                continue
             # Petición del precio del producto
             while True:
                 try:
@@ -42,7 +45,7 @@ while True:
             print("Producto cargado exitosamente.")
 
             # Preguntar si desea agregar más productos
-            agregar_mas = input("¿Desea agregar más productos? (S/N): ").strip().upper()
+            agregar_mas = input("¿Desea agregar más productos? (S: seguir/otra tecla para salir): ").strip().upper()
             if agregar_mas != "S":
                 break  # Salir del ciclo de registro y volver al menú principal
 
