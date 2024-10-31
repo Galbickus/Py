@@ -12,7 +12,7 @@ while True:
     if opcion == "1":
         print("Usted ha seleccionado la opción N°1: Registro")
         while True:
-            nombre = input("Nombre del producto: ").strip().upper()
+            nombre = input("Nombre del producto: ").strip().upper() # strip sirve para que no tome los espacios
             
             # Petición del precio del producto
             while True:
@@ -60,4 +60,4 @@ while True:
         break
 
     else:
-        print("Opción inválida. Por favor, ingrese un número válido (1, 2 o 7).")
+        print("Opción inválida. Por favor, ingrese un número válido.")
