@@ -55,6 +55,7 @@ while True:
             print("Lista de productos registrados:")
             for producto in productos:
                 print(f"Nombre: {producto['nombre']}, Precio: {producto['precio']}, Stock: {producto['stock']}")
+                print("-" * 60)
         else:
             print("No hay productos registrados aún.")
 
