@@ -37,22 +37,20 @@ while True:
                 #PETICION DEL STOCK DEL PRODUCTO
                 while True:
                     try:
-                        stock = float(input("Cantidad del producto: ")) 
+                        stock = int(input("Cantidad del producto: ")) 
                         if stock <= 0:
                             print("El stock debe ser mayor a cero: ")
                     except ValueError:
-                        print("El stock debe ser un número: ")
-                
+                        print("El stock debe ser un número válido: ")
+                    # Guardar producto en la lista
                     producto= [nombre, precio, stock] 
                     productos.append(producto)       
-                    print("Producto cargado exitosamente") 
-                
+                    print("Producto guardado exitosamente") 
+                    # Preguntar si desea agregar más productos
                     agregar_mas=input("¿Desea agregar más unidades? (S:si N:no)").lower()
                     if agregar_mas != 's':
                         break  # Salir del ciclo de registro si no se quiere agregar más stock
-                    else: False
-            False   
-            
+
             
         elif opcion ==2:
             print("Usted ha seleccionado la opción N°2: Visualización ")
