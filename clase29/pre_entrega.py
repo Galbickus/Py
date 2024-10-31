@@ -21,7 +21,7 @@ while True:
         if opcion == 1:
             print("Usted ha seleccionado la opción N°1: Registro")
             while True:
-                nombre = str(input("Nombre del producto: ").upper)
+                nombre = str(input("Nombre del producto: ").upper())
                 
                 #PETICION DEL PRECIO DEL PRODUCTO
                 while True:
@@ -43,17 +43,19 @@ while True:
                     except ValueError:
                         print("El stock debe ser un número: ")
                 
-                producto= [nombre, precio, stock] 
-                productos.append(producto)       
-                print("Producto cargado exitosamente") 
+                    producto= [nombre, precio, stock] 
+                    productos.append(producto)       
+                    print("Producto cargado exitosamente") 
                 
-                agregar_mas=input("¿Desea agregar más productos? (s:si n:no)").lower
-                          
-            
+                    agregar_mas=input("¿Desea agregar más unidades? (S:si N:no)").lower()
+                    if agregar_mas != 's':
+                        break  # Salir del ciclo de registro si no se quiere agregar más stock
+                    else: False
+            False   
             
             
         elif opcion ==2:
-            print("Usted ha seleccionado la opción N°2: ")
+            print("Usted ha seleccionado la opción N°2: Visualización ")
         elif opcion ==3:
             print("Usted ha seleccionado la opción N°3: ")
         elif opcion ==4:
