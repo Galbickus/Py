@@ -7,7 +7,7 @@ while True:
     print("2. Visualización: Consulta de datos de productos.")
     print("7. Salir.")
     
-    opcion = input("Seleccione una opción entre 1 y 7: ").strip()
+    opcion = input("Seleccione una opción entre 1 y 7: ").strip()  #el strip() me dijo un compañero que iba pero en este caso es igual
 
     if opcion == "1":
         print("Usted ha seleccionado la opción N°1: Registro")
@@ -64,3 +64,6 @@ while True:
 
     else:
         print("Opción inválida. Por favor, ingrese un número válido (1, 2 o 7).")
+
+#SALIDA: NRO DE OPCIÓN SOLICITADA.
+#////////////////////////////////////////////////////////////////////////////////////
